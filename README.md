@@ -22,6 +22,9 @@ A flexible Flutter package that provides a customizable list view with categorie
 - **Scroll Controllers:** Integrated with `ScrollablePositionedList` for precise scroll position control and `ItemPositionsListener` for scroll event handling.
 - **Dynamic Item Building:** Use custom builder functions for list items and categories, providing flexibility in content rendering.
 
+<img src="https://github.com/said8811/list_with_cats/blob/main/example/list_with_cats_example/assets/Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-02-25%20at%2015.55.18.png?raw=true" alt="List with Cats Example" width="600"/>
+
+
 ## Getting Started
 
 To use this package, add `ListViewWithCategories` as a dependency in your `pubspec.yaml` file.
@@ -43,7 +46,7 @@ First, ensure you have the package imported in your Dart file:
 import 'package:your_package_name/ListViewWithCategories.dart';
 
 ```
-![Basic usage of ListViewWithCategories showing a categorized list of items](https://private-user-images.githubusercontent.com/95495763/307585351-86da7a90-0c2a-42b9-91a0-2a726cdc4fb5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg4NTkyMTUsIm5iZiI6MTcwODg1ODkxNSwicGF0aCI6Ii85NTQ5NTc2My8zMDc1ODUzNTEtODZkYTdhOTAtMGMyYS00MmI5LTkxYTAtMmE3MjZjZGM0ZmI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI1VDExMDE1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQxY2MyYzQ1OGVjZGNhYmRmZDA5NTczZTUwMjVkZTM2N2NmNWVkNWRjY2RjOTc1OTMxZDM5ZmM0Mjc3YjBmNjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.wvtgqoCorQltMsfFxO6UFHytMEj-MOwPmAL6GnNyg_g?raw=true)
+
 
 
 ```dart

@@ -1,6 +1,6 @@
 name: list_with_categories
 description: "ListView with Categories to make developers easy life"
-version: 0.0.1
+version: 0.1.2
 homepage: https://github.com/said8811/list_with_cats
 
 environment:

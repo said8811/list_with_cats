@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.1.2
 
-* Created for easier usage of listview 
+* Fixed Controller and Listener bugs and added Features

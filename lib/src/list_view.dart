@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:list_with_categories/src/list_scroll_controller.dart';
+import 'package:list_with_categories/src/list_scroll_listener.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class ListViewWithCategories extends StatefulWidget {
@@ -6,8 +8,8 @@ class ListViewWithCategories extends StatefulWidget {
   final double? categoryHeight;
   final double? categoriesGap;
   final bool? isColumn;
-  final ItemScrollController controller;
-  final ItemPositionsListener scrollListener;
+  final ListScrollController controller;
+  final ListScrollListener scrollListener;
   final ScrollController? categoriesController;
   final int itemsLength;
   final Widget Function(BuildContext, int) itemBuilder;
@@ -32,11 +34,6 @@ class ListViewWithCategories extends StatefulWidget {
 
 class _ListViewWithCategoriesState extends State<ListViewWithCategories> {
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     if (widget.isColumn ?? false) {
       return Column(
@@ -57,8 +54,9 @@ class _ListViewWithCategoriesState extends State<ListViewWithCategories> {
           ),
           Expanded(
             child: ScrollablePositionedList.builder(
-              itemScrollController: widget.controller,
-              itemPositionsListener: widget.scrollListener,
+              itemScrollController: widget.controller.itemScrollController,
+              itemPositionsListener:
+                  widget.scrollListener.itemPositionsListener,
               itemCount: widget.itemsLength,
               itemBuilder: widget.itemBuilder,
             ),
@@ -71,8 +69,8 @@ class _ListViewWithCategoriesState extends State<ListViewWithCategories> {
       children: [
         Expanded(
           child: ScrollablePositionedList.builder(
-            itemScrollController: widget.controller,
-            itemPositionsListener: widget.scrollListener,
+            itemScrollController: widget.controller.itemScrollController,
+            itemPositionsListener: widget.scrollListener.itemPositionsListener,
             itemCount: widget.itemsLength,
             itemBuilder: widget.itemBuilder,
           ),

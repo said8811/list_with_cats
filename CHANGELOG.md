@@ -1,3 +1,3 @@
-## 0.1.2
+## 0.1.3
 
-* Fixed Controller and Listener bugs and added Features
+* Added images and explanations
